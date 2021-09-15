@@ -1,0 +1,23 @@
+{
+  "name": "img2webp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webp.js",
+  "scripts": {
+    "build:win": "pkg webp.js --target node14-win-x64",
+    "build:mac": "pkg webp.js --target node14-mac-x64",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pkg": {
+    "assets": [
+      "config.js",
+      "img2webp",
+      "img2webp.exe"
+    ]
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "pkg": "^5.3.2"
+  }
+}
